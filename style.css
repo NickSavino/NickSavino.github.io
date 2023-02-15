@@ -74,10 +74,12 @@ body {
   }
 
 
-img {
+
+.headshot {
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
 }
-
 
 .portrait {
     border: 0px solid;
@@ -85,7 +87,7 @@ img {
     border-right-color: lightgray;
     align-self: flex-start;
     order: 0;
-    flex-grow: 25;
+    flex-grow: 5;
     height: 85%;
     text-align: center;
     padding-top: 10px;

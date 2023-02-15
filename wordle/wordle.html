@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+    
+
+  <body class="page-content">
+
+    <div class="page-header">
+      <div class ="return-home">
+        <button id="home-button"><a href="/projects.html">&#10094;&#10094; Home</a></button>
+      </div>
+      <div class ="game-title">Wordle</div>
+      <div class ="header-buttons">
+        <button onclick="toggleDarkMode()"><i>&#9681;</i></button>
+        <button onclick="displayHint()"><i>&#63;</i></button>
+        <button onclick="displayInfo()"><i>&#9432;</i></button>
+      </div>
+    </div>
+
+    <div id="game-container">
+
+      <div id="game-area">
+        <div id="start-over">
+          <div id="loading">Loading...</div>
+          <button style="display: none;" onclick="restartGame()">Start Over</button>
+        </div>
+      </div>
+    
+      <div id="win-screen" style="display: none;"><img src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif"></div>
+      <div id="game-info" style="display: none">
+        <h2>How To Play</h2>
+        <ul>
+          <li>Start typing. The letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+          <li>Letters with gray background do not exist in the word</li>
+          <li>if you need a hint, click the &#63; icon</li>
+        </ul>
+      </div>
+  </div>
+
+    <div class="copyright">&copy; Nicola Savino 2023</div>
+
+  </body>  
+
+  <body>
+    <script src="./wordle.js"></script>
+
+
+  </body>
+  
+</html>
+
+

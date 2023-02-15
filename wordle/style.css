@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+html#dark-mode {
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  color: white;
+
+}
+
+i {
+  width: 1px;
+  height: 1px;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.page-header {
+  border: 0px solid;
+  border-top-width: 5px;
+  border-top-color: purple;
+  border-bottom-width: 1px;
+  border-bottom-color: lightslategrey;
+  padding: 10px 0 10px;
+  height: fit-content;
+  width: 100%;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+
+.return-home {
+  border: 0px solid;
+  display: flex;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#dark-mode a {
+  color: white;
+}
+
+#home-button {
+  display:flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.game-title {
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.header-buttons {
+  width: 10vw;
+  padding-right: 1px;
+  border: 0px solid;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  width: 25%;
+}
+
+
+
+button#dark-mode {
+  color: white;
+  border: none;
+  font-size: 30px;
+  width: 25%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#dark-mode button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#dark-mode button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#loading {
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+div#start-over {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  order: 2;
+}
+
+div#start-over button {
+  margin-top: 5px;
+  background-color: purple;
+  width: fit-content;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold; 
+}
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+#game-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+}
+
+#game-info {
+  display: flex;
+  order: 1;
+  border: 0px solid;
+  border-left-width: 1px;
+  border-left-color: lightslategray;
+  flex-direction: column;
+  padding: 5px 5px 5px 5px;
+  width: fit-content;
+  height: 100%;
+  align-content: flex-start;
+}
+
+div#wordle-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: min-content;
+  height: fit-content;
+  order: 0;
+  flex-shrink: 1;
+  margin-top: 10px;
+  
+}
+
+#hint-div {
+  display: flex;
+  order: 3;
+  border: 1px solid;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+  min-width: fit-content;
+  width: 40vw;
+  height: 5vw;
+  border-radius: 80%;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  background-color: #dbd3cc;
+  color: black;
+}
+
+.letter-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  min-height: 50px;
+  width: 100%;
+  margin: 2px;
+}
+
+.grid-cell {
+  display: flex;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 100px;
+  height: 6vw;
+  width: 6vw;
+  max-height: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid;
+  border-color: lightgrey;
+  justify-content: center;
+}
+
+.next-cell {
+  --color-toggle: black;
+  border-color: var(--color-toggle);
+}
+
+#dark-mode .next-cell {
+  border-color: yellow;
+}
+
+
+.filled-cell {
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  font-weight: bolder;
+  color: white;
+  background-color: grey;
+}
+
+.correct-cell {
+  background-color: green;
+}
+
+.yellow-cell {
+  background-color: khaki;
+}
+
+.copyright {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
+  border: 0px solid;
+  border-top-color: purple;
+  border-top-width: 2px;
+  width: 100%;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+#lose-info {
+  display: flex;
+  justify-content: center;
+  order: 5;
+  border: 1px solid;
+  height: fit-content;
+  padding: 10px 0 10px 0;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+}
+
+#win-info {
+  display: flex;
+  justify-content: center;
+  order: 5;
+  border: 1px solid;
+  height: fit-content;
+  padding: 10px 0 10px 0;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 18px;
+  background-color: grey;
+}
+
+#win-word {
+  text-transform: uppercase;
+}
