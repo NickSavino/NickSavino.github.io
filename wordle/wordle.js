@@ -278,17 +278,17 @@ function toggleDarkMode() {
     let html = document.querySelector("html");
     let buttons = document.getElementsByClassName("header-buttons")[0];
     let game = document.getElementById("wordle-box");
-    if (html.id != "dark-mode") {
-        html.id = "dark-mode";
-        buttons.children[0].id = "dark-mode";
-        buttons.children[1].id = "dark-mode";
-        buttons.children[2].id = "dark-mode";
+    if (html.className != "dark-mode") {
+        html.classList.add("dark-mode");
+        buttons.children[0].classList.add("dark-mode");
+        buttons.children[1].classList.add("dark-mode");
+        buttons.children[2].classList.add("dark-mode");
     }
     else {
-        html.id = "";
-        buttons.children[0].id = "";
-        buttons.children[1].id = "";
-        buttons.children[2].id = "";
+        html.classList.remove("dark-mode");
+        buttons.children[0].classList.remove("dark-mode");
+        buttons.children[1].classList.remove("dark-mode");
+        buttons.children[2].classList.remove("dark-mode");
     }
 }
 

@@ -8,7 +8,7 @@ html {
   height: 100%;
 }
 
-html#dark-mode {
+html.dark-mode {
   width: 100%;
   height: 100%;
   background-color: #121212;
@@ -58,7 +58,7 @@ a {
   color: black;
 }
 
-#dark-mode a {
+.dark-mode a {
   color: white;
 }
 
@@ -96,7 +96,7 @@ button {
 
 
 
-button#dark-mode {
+button.dark-mode {
   color: white;
   border: none;
   font-size: 30px;
@@ -230,7 +230,7 @@ div#wordle-box {
   border-color: var(--color-toggle);
 }
 
-#dark-mode .next-cell {
+.dark-mode .next-cell {
   border-color: yellow;
 }
 
