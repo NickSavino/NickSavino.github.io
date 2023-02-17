@@ -16,9 +16,9 @@
       </div>
       <div class ="game-title">Wordle</div>
       <div class ="header-buttons">
-        <button onclick="toggleDarkMode()"><i>&#9681;</i></button>
-        <button onclick="displayHint()"><i>&#63;</i></button>
-        <button onclick="displayInfo()"><i>&#9432;</i></button>
+        <button onclick="toggleDarkMode()" id="dark-button"><i>&#9681;</i></button>
+        <button onclick="displayHint()" id="hint-button"><i>&#63;</i></button>
+        <button onclick="displayInfo()" id="info-button"><i>&#9432;</i></button>
       </div>
     </div>
 
@@ -27,7 +27,7 @@
       <div id="game-area">
         <div id="start-over">
           <div id="loading">Loading...</div>
-          <button style="display: none;" onclick="restartGame()">Start Over</button>
+          <button id="reset-button" style="display: none;" onclick="restartGame()">Start Over</button>
         </div>
       </div>
     

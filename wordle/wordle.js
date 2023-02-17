@@ -190,6 +190,8 @@ function loseGame() {
 }
 
 function restartGame() {
+
+    document.getElementById("start-over").blur();
     
     //reset values
     guessesRemaining = 6;
@@ -233,6 +235,8 @@ function restartGame() {
 function displayHint() {
     let game_area = document.getElementById("game-area");
     
+    document.getElementById("hint-button").blur();
+
     let hint_div = document.getElementById("hint-div")
 
     if (hint_div != null) {
@@ -255,6 +259,9 @@ function displayHint() {
 
 function displayInfo() {
     const info = document.getElementById("game-info");
+
+    document.getElementById("info-button").blur();
+
     if (info.style.display == "none") {
         info.style.display = "flex";
     }
@@ -265,6 +272,9 @@ function displayInfo() {
 
 
 function toggleDarkMode() {
+
+    document.getElementById("dark-button").blur();
+
     let html = document.querySelector("html");
     let buttons = document.getElementsByClassName("header-buttons")[0];
     let game = document.getElementById("wordle-box");
