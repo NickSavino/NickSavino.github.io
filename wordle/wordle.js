@@ -191,7 +191,7 @@ function loseGame() {
 
 function restartGame() {
 
-    document.getElementById("start-over").blur();
+    document.getElementById("reset-button").blur();
     
     //reset values
     guessesRemaining = 6;
